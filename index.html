@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera apliacion Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema3.app.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/reciclaje.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regrsar" data-back-btn-theme="b">
+<h1>LA CONTAMINACION</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>DEFINICION </h2>
+ <p> Se muestra la definicion de la contaminacion</p>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>TIPOS DE LA CONTAMINACION</h2>
+  <p> Se muestra los tipos de la contaminacion</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>CONSECUENCIAS DE LA CONTAMINACION</h2>
+  <p> Muestra las concecuencias</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>RECICLAJE</h2>
+  <p> Muestra lo que es el reciclaje</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>MEDIDAS PREVENTIVAS</h2>
+  <p>Muestra las medidas preventivas de la contaminacion</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>CONTAMINACION EN NUESTRO ENTORNO</h2>
+  <p>Muestra las propuestas de la contaminacion en nuestro entorno </p>
+  </a>
+  </li>
+  </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <img src="imagenes/Trash-icon.png" width="128" height="128">
+  </div>
+  <div>
+  <h4>Aplicacion tres</h4>
+  <h4>Maria Victoria Perez Alvarez </h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>DEFINICION DE LA CONTAMINACION</h1>
+  
+  </div>
+  <div data-role="content" align="center">
+  <div>
+    <p>La <strong><a href="https://www.inspiraction.org/cambio-climatico/contaminacion">contaminación</a></strong> es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancias quimicas, energia (como sonido, calor, luz o radioactividad).</p>
+    <p>Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</p>
+    <p>La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina. Existen muchos agentes contaminantes entre ellos las sustancias químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir enfermedades, daños en los ecosistemas o el medioambiente. Además existen muchos contaminantes gaseosos que juegan un papel importante en diferentes fenómenos atmosféricos, como la generación de lluvia ácida, el debilitamiento de la capa de ozono, y el cambio climático.</p>
+    <p>Hay muchas formas de combatir la contaminación, y legislaciones internacionales que regulan las emisiones contaminantes de los países que adhieren estas políticas. La contaminación está generalmente ligada al desarrollo económico y social. Actualmente muchas organizaciones internacionales como la ONU ubican al desarrollo sostenible como una de las formas de proteger al medioambiente para las actuales y futuras generaciones.</p>
+    <h4>&nbsp;</h4>
+  <center>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>foto</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/definicion2.jpg" width="180%" height="180%"></div>
+</div>
+</div>
+<div></center>
+  <p>La contaminación del aire continuó siendo un problema en Inglaterra, especialmente con la llegada de la revolución industrial. Londres también registró uno de los casos más extremos de contaminación del agua con aguas residuales durante el Gran Hedor del Río Támesis en 1858, esto dio lugar que poco después a la construcción del sistema de alcantarillado de Londres. Fue la industrial</a> la que inició la contaminación como un problema medioambiental. La aparición de grandes fábricas y el consumo de inmensas cantidades de carbón y otros combustibles fósiles aumentaron la contaminación del aire y ocasionando un gran volumen de vertidos de industriales al ambiente, a los que hay que sumar el aumento de residuos humanos no tratados.</p>
+  <p>En 1272 Eduardo I de Inglaterra en una proclamación prohibió la quema de carbón en Londres, cuando la contaminación atmosférica</a> en la ciudad se convirtió en un problema.</p>
+  <p>En 1881 y Cincinnati fueron las dos primeras ciudades estadounidenses en promulgar leyes para garantizar el aire limpio. Otras ciudades estadounidenses siguieron el ejemplo durante principios del siglo XX, cuando se creó un pequeño Departamento de Contaminación del Aire, dependiente del Departamento del Interior.Los Ángeles y experimentaron grandes cantidades de smog durante la década del 1940.</p>
+  <h4>.</h4>
+   <center>
+     <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto </h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/definicion.jpg" width="100%" height="100%"></div>
+</div>
+</div>
+<div>
+   </center>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+  <h4> Aplicacion tres, MVPA</h4>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"
+  
+  <h1>LOS TIPOS DE CONTAMINACION</h1>
+  </div>
+<div data-role="content" align="center">
+  <div>
+    <p>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:</p>
+    <p><em>Contaminación del Agua</em></p>
+    <p><em>Contaminación del Aire</em></p>
+    <p><em>Contaminación del Suelo</em></p>
+    <p><em>Contaminación Térmica</em></p>
+    <p><em>La Contaminación radiactiva</em></p>
+    <p><em>Contaminación Acústica</em></p>
+    <p><em>Contaminación Lumínica</em></p>
+    <h4>&nbsp;</h4>
+<center>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto tipos de la contaminacion</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/tipos.jpg" width="100%" height="100%"></div>
+</div>
+</div>
+</center>
+ </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Aplicacion tres, MVPA</h4>
+  </div>
+  </div>
+  
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CONCECUENCIAS</h1>
+   </div>
+   <div data-role="content" aling="center">
+     <div>
+       <p>
+       <div><em><strong>Los principales causantes de la contaminación ambiental son:</strong></em><br>
+         <em>• desechos sólidos domésticos</em><br>
+         <em>• desechos sólidos industriales<br>
+           • exceso de fertilizante y productos químicos<br>
+           • tala<br>
+           • quema<br>
+           • basura<br>
+           • el monóxido de carbono de los vehículos<br>
+           • desagües de aguas negras o contaminadas al mar o ríos</em><br>
+         <em>Muchas de las causas del deterioro ambiental es debido a : la sobreexplotación , destrucción del hábitat , la contaminación , la erosión y la deforestacion . Estudios realizados dicen que el deterioro del medio ambiente provoca el 21% de los problemas de salud que sufre la población mundial .</em></div>
+       <h4><em><u><br>
+       </u></em></h4>
+       <h4><em><u>Consecuencias<a href="https://tendenzias.com/eco/las-consecuencias-de-la-contaminacion/"></a></u></em></h4>
+       <em>La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra </em><em>salud cardiovascular</em><br>
+       <em>por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. </em><br>
+       <div><em>Otra consecuencia es</em> <em>el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global.La contaminacion al medio a</em><em>tenta contra la vida de plantas, animales y personas, g</em><em>enera daños físicos en los individuos, </em><em>convierte en un elemento no consumible al agua</em></div>
+       <em>y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañandolo y perjudicándole.</em>
+       <h4>&nbsp;</h4></p>
+       <center>
+     <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> foto consecuencias</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/consecuencias.jpg" width="900" height="562"></div>
+</div>
+</div>
+</center>
+</div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres, MVPA </h4>
+     </div>
+     </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <center>
+      <h1>Reciclaje</h1></center>
+    </div>
+    <div data-role="content" aling="center">
+      <div>
+         <h4>El <strong>reciclaje</strong> consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta.</h4>
+         <h2>El proceso del reciclaje</h2>
+         <p>Todo este proceso del reciclaje, pasa por varias fases:</p>
+         <p>El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia.</p>
+         <p>En estas plantas, se almacenan y compactan grandes cantidades de residuos, para su posterior transporte en grandes cantidades hacia las plantas de reciclaje, llamadas plantas clasificadoras. Es aquí cuando se hace una separación exhaustiva de los residuos. En estas plantas, encontramos en algunos casos, las plantas de valoración, o reciclador final, donde se obtienen nuevas materias o productos, se almacenan los materiales en grandes vertederos, o bien se produce energía como es el caso de las plantas de biogas.</p>
+         <h2>Estrategia de tratamiento de residuos</h2>
+         <p>El reciclaje, al margen de su complejo proceso de transformación, es uno de los puntos básicos de estrategia de tratamiento de residuos 3R.</p>
+         <h3>Reducir</h3>
+         <p>Acciones para reducir la producción de objetos susceptibles de convertirse en residuos.</p>
+         <h3>Reutilizar</h3>
+         <p>Acciones que permiten el volver a usar un producto para darle una segunda vida, con el mismo uso u otro diferente.</p>
+         <h3>Reciclar</h3>
+         <p>El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida.</p>
+         <p>&nbsp;</p>
+         <p>&nbsp;</p>
+         </p>
+         <center>
+         <div data-role="main" class="ui-content">
+ <center><div data-role="collapsible" data-content-theme="false">
+<h1> Foto reciclaje</h1>
+<div>
+<br>
+</div>
+<div>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/reciclaje.jpg',1)"><img src="imagenes/reciclaje2.jpg" width="900" height="562" id="Image22"></a>
+</center></div>
+</div>
+</div>
+<div>
+  </center>
+       </div>
+       </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres,MVPA</h4>
+     </div>
+   </div>
+
+  
+        <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <center>
+          <h1>Medidas a tomar para evitar la Contaminación Ambiental</h1></center>
+      </div>
+    <div data-role="content" aling="center">
+       <div>
+         <p><h4>Crear conciencia ciudadana.</h4>
+<h4>No quemar ni talar plantas.</h4>
+<h4>Colocar la basura en los lugares apropiados.</h4>
+<h4>Regular el servicio de aseo urbano.</h4>
+<h4>Controlar el uso de fertilizantes y pesticidas.</h4>
+<h4>Crear vías de desagüe para las industrias que no lleguen a los mares o ríos utilizados</h4> <h4>para el servicio o consumo del ser humano o de los animales.</h4>
+<h4>Controlar los derrames accidentales de petróleo.</h4>
+<h4>Controlar los relaves mineros.</h4>
+<h4>Reciclar objetos (darles un nuevo uso).</h4>
+<h4>Tomar y generar conciencia de lo que está sucediendo.</h4>
+<h4>Realizar campañas de apoyo.</h4>
+<h4>Evitar el uso de aerosoles.</h4>
+<h4>Tener sentido de responsabilidad.</p>
+         <center>
+         <div data-role="main" class="ui-content">
+ <center><div data-role="collapsible" data-content-theme="false">
+<h1> Foto medidas preventivas</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/medidas2.jpg" width="100%" height="100%"></div>
+</div>
+</div>
+<div>
+  </center>
+       </div>
+       </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion dos,fpv</h4>
+     </div>
+   </div>
+        <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <center>
+          <h1>Propuestas en nuestro entorno</h1></center>
+      </div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/consecuencias.jpg" alt="consecuencias" title="consecuencias" id="wows1_0"/></li>
+		<li><img src="data1/images/consecuencias2.jpg" alt="consecuencias2" title="consecuencias2" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacionagua.jpg" alt="contaminacion-agua" title="contaminacion-agua" id="wows1_2"/></li>
+		<li><img src="data1/images/tipo2.jpg" alt="tipo2" title="tipo2" id="wows1_3"/></li>
+		<li><img src="data1/images/tipos.jpg" alt="tipos" title="tipos" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/reciclaje2.jpg" alt="wow slider" title="reciclaje2" id="wows1_5"/></a></li>
+		<li><img src="data1/images/medidas2.jpg" alt="medidas2" title="medidas2" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="consecuencias"><span><img src="data1/tooltips/consecuencias.jpg" alt="consecuencias"/>1</span></a>
+		<a href="#" title="consecuencias2"><span><img src="data1/tooltips/consecuencias2.jpg" alt="consecuencias2"/>2</span></a>
+		<a href="#" title="contaminacion-agua"><span><img src="data1/tooltips/contaminacionagua.jpg" alt="contaminacion-agua"/>3</span></a>
+		<a href="#" title="tipo2"><span><img src="data1/tooltips/tipo2.jpg" alt="tipo2"/>4</span></a>
+		<a href="#" title="tipos"><span><img src="data1/tooltips/tipos.jpg" alt="tipos"/>5</span></a>
+		<a href="#" title="reciclaje2"><span><img src="data1/tooltips/reciclaje2.jpg" alt="reciclaje2"/>6</span></a>
+		<a href="#" title="medidas2"><span><img src="data1/tooltips/medidas2.jpg" alt="medidas2"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="content" aling="center">
+       <div>
+       <h4>Para solucionar el problema de la contaminación es de  urgente necesidad tomar algunas medidas.
+
+1.&nbsp;El&nbsp;Estado&nbsp;debe preocuparse del problema de la contaminación,  dando leyes severas, controlando su cumplimiento y sancionando a los  transgresores. El problema ambiental es un problema que afecta al bien común y  a la calidad de la vida, y, en consecuencia, no puede quedar al libre albedrío  de las personas. El bien común es una responsabilidad del Estado como  representante del bienestar de todos los ciudadanos.
+           
+2.&nbsp;Una alta responsabilidad incumbe a los&nbsp;gobiernos municipales,  responsables directos de la disposición de la basura y las aguas servidas; del  control del parque automotor; de las áreas verdes; del control de los ruidos  molestos; del ornato, y de las emisiones contaminantes en su jurisdicción.
+
+3.&nbsp;Los&nbsp;ciudadanos&nbsp;deben tomar más conciencia del problema,  exigir respeto por el medio ambiente y no contribuir a su deterioro. El aporte  de los ciudadanos, individualmente, puede ser muy grande en algunos aspectos:
+
+·&nbsp;No arrojar la basura y los desechos en las calles ni en cualquier lugar.
+
+·&nbsp;Evitar los ruidos molestos, tanto a nivel de barrio (escapes abiertos,  bocinas, música fuerte) como a nivel doméstico.
+ 
+&nbsp;Erradicar hábitos sumamente contaminantes, como el escupir y hacer  deposiciones en la calle o en los parques y jardines, etc.
+ 
+
+&nbsp;Sembrar árboles y colaborar en el mantenimiento de las áreas verdes.
+           
+·&nbsp;No utilizar productos que contienen contaminantes, como CFC  (desodorantes en aerosol), gasolina con plomo, etc.
+          
+&nbsp;Si utilizan vehículos automotores, regular periódicamente la combustión  del motor para evitar la producción de gases tóxicos.
+           
+4.&nbsp;Se deben usar&nbsp;alternativas menos contaminantes&nbsp;como abonos  orgánicos en lugar de los sintéticos; transformar los desechos urbanos  orgánicos en abonos; controlar biológicamente las plagas, es decir, combatir  los insectos dañinos con sus enemigos naturales, etc.
+           
+5.&nbsp;Prohibir la&nbsp;propaganda ciega para los insecticidas, herbicidas y  otras sustancias tóxicas, debiéndose alertar obligatoriamente al usuario sobre  los efectos contaminantes y letales de las mismas.
+           
+6. Educar a la población&nbsp;a través de las escuelas y medios de comunicación  (TV, radio, periódicos) en el respeto por el medio ambiente y en la  erradicación de pésimas costumbres de contaminación ambiental.
+           
+7.&nbsp;En el Perú, después de muchas consultas y presiones, se ha establecido  el&nbsp;Consejo Nacional del Ambiente (CONAM). Esta institución debe asumir a  plenitud su responsabilidad de controlar la contaminación en un esfuerzo  concertado, y fomentar soluciones a los problemas, dando plazos de adecuación a  las normas de control de la contaminación ambiental a nivel nacional.
+
+8.&nbsp;Los&nbsp;maestros&nbsp;tienen una muy alta participación en educar a  las futuras generaciones hacia la responsabilidad con el medio ambiente y  ayudar a la toma de conciencia sobre los daños de la contaminación.</h4>         
+<center>
+         <div data-role="main" class="ui-content">
+ <center><div data-role="collapsible" data-content-theme="false">
+<h1> foto de medidas en mi entorno</h1>
+<div>
+<br>
+</div>
+<div>
+<center><img src="imagenes/entorno.jpg" width="100%" height="100%"></center></div>
+</div>
+</div>
+<div>
+  </center>
+       </div>
+       </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion tres, MVPA</h4>
+     </div>
+   </div>
+
+
+
+</body>
+</html>
